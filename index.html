@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Twoje BMI</title>
+	</head>
+
+	
+	
+	
+<body>
+	
+	
+	
+	<header>
+		<div class="header">
+			<div class="logo">
+			     <img src="wzor.png" alt="wzór BMI">
+			</div>
+			
+			<div class="nagluwek">
+			<h1>Oblicz swoje BMI</h1>
+			</div>
+		</div>
+			
+		<div class="tablica">
+				<table>
+
+				<tr><th>Interpretacja BMI</th><th>Wartość minimalna</th><th>Wartość maksymalna</th></tr>
+
+				<tr><td>Niedowaga</td><td>O</td><td>18</td></tr>
+
+				<tr><td>Waga prawidłowa</td><td>19</td><td>25</td></tr>
+
+				<tr><td>Nadwaga</td><td>26</td><td>30</td></tr>
+
+				<tr><td>Otyłość</td><td>31</td><td>100</td><tr>
+				
+				</table>
+		</div>
+			
+	</header>
+
+	<main>
+		<section class="data">
+		
+			<h2>Podaj wagę i wzrost</h2>
+			
+			<form method="post" action="bmi.html">
+				Waga: <input type="number" min="1" id="waga"><br>
+				Wzrost w cm: <input type="number" min="1" id="wzrost"><br>
+				<input type="button" value="Oblicz i zapamiętaj wynik" onclick="liczyc();">
+				<p id="bmi"></p>
+			</form>
+			
+				<script>
+					function liczyc(){
+					var waga = document.getElementById("waga").value;
+					var wzrost = document.getElementById("wzrost").value;
+					var wynik = (waga/(wzrost*wzrost)*10000);
+					document.getElementById("bmi").innerHTML = "Twója waga: " + waga + " Twój wzrost: " + wzrost + " <br> BMI wynosi: " + wynik;
+					}
+					
+					
+				</script>
+			
+		</section>
+			
+		<section class="images">
+			<img src='ludzik.png' alt='ćwiczenia'>
+		</section>
+
+	</main>
+			
+	<footer>
+			Autor: 81071121771
+			<a href="kwerendy.txt">Zobacz kwerendy</a>
+	</footer>
+			
+</body>
+</html>

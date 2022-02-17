@@ -1,0 +1,63 @@
+body{
+	font-family: Georgia;
+	background-color: #FFFFFF;
+}
+.header {
+	display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+	background-color: #FF6600;
+	width: 25%;
+}
+
+.nagluwek
+{
+	background-color: #FF6600;
+	text-align: center;
+	width: 75%;
+	height: 100px;
+	
+}
+header {
+	background-color: #FF6600;
+	padding: 0px 10px 40px 0px;}
+
+
+.tablica {
+
+     padding: 50px 100px 50px 100px;
+}	
+main{
+	background-color: #FFFFFF;
+	
+}
+.data{
+	float:left;
+}
+.images{
+	height: 400px;
+	float:right;
+}
+
+form{
+	margin: 70px;
+}
+
+table{
+	color: white;
+	text-align: center;
+	width: 80%;
+	border: 1px dotted white;
+}
+tr:hover{
+	background-color: #D3D3D3;
+	color:black;
+	}
+
+footer{
+	background-color: #FF6600;
+	padding: 20px;
+	clear: both;
